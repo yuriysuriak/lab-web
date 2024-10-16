@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юрій - ВПУ №29</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef;
+        }
+        header {
+            background: #3A8EBA;
+            color: white;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        nav a.active {
+            border-bottom: 2px solid white;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .blog-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+        }
+        .contact-form input, .contact-form textarea {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background: #3A8EBA;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background: #317A9D;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #3A8EBA;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Юрій - ВПУ №29</h1>
+    <nav>
+        <a href="#contact">Контакти</a>
+    </nav>
+</header>
+
+<main>
+    <section id="blog">
+        <h2>Блог</h2>
+        <div class="blog-section">
+            <h3>Створення Telegram-бота на Python</h3>
+            <p>У цій статті я розповім, як створити простого Telegram-бота на Python.
+               Для цього нам знадобиться бібліотека <code>python-telegram-bot</code>.
+               Після встановлення бібліотеки можна почати розробку бота, який буде
+               відповідати на команди користувачів.</p>
+            <img src="https://cdn.botpenguin.com/assets/website/Skeddy_Bot_66080fe73e.webp" alt="Telegram Bot" style="margin-top: 10px;">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакти</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Ваше ім'я" required>
+            <input type="email" placeholder="Ваш Email" required>
+            <textarea placeholder="Ваше повідомлення" required></textarea>
+            <button type="submit">Відправити</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 Юрій. Всі права захищені.</p>
+</footer>
+
+</body>
+</html>
